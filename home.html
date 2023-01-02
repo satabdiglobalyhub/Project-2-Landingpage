@@ -8,34 +8,56 @@
     <script>
       tailwind.config = {
         theme: {
-          extend: {
-
-          },
+          extend: {},
         },
       };
     </script>
+    <style>
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-weight: 700;
+      }
+    </style>
     <title>Home</title>
   </head>
   <body>
-    <header class=" fixed w-full top-0 bg-white ">
+    <header class="fixed w-full top-0 bg-white z-50">
       <div class="container mx-auto">
         <nav class="flex justify-between items-center py-4">
           <div>
             <a href="home.html"> <img src="pictures/logo twiscode.png" /></a>
           </div>
           <div class="p-1.5 ml-72 flex items-center">
-            <div class=" flex gap-x-10 mr-6">
+            <div class="flex gap-x-10 mr-6">
               <a
                 href="home.html"
                 class="p-1.5 hover:underline-offset-8 hover:underline"
                 >Home</a
               >
-              <a href="#" class="p-1.5 hover:underline-offset-8 hover:underline">Work</a>
-              <a href="#" class="p-1.5 hover:underline-offset-8 hover:underline">Services</a>
-              <a href="#" class="p-1.5 hover:underline-offset-8 hover:underline">Our Customer</a>
-              <a href="#" class="p-1.5 hover:underline-offset-8 hover:underline">Team</a>
-              <a href="Career.html" class="p-1.5 hover:underline-offset-8 hover:underline">Career</a>
-              <a href="#" class="p-1.5 hover:underline-offset-8 hover:underline">Contact</a>
+              <a href="#" class="p-1.5 hover:underline-offset-8 hover:underline"
+                >Work</a
+              >
+              <a href="#" class="p-1.5 hover:underline-offset-8 hover:underline"
+                >Services</a
+              >
+              <a href="#" class="p-1.5 hover:underline-offset-8 hover:underline"
+                >Our Customer</a
+              >
+              <a href="#" class="p-1.5 hover:underline-offset-8 hover:underline"
+                >Team</a
+              >
+              <a
+                href="Career.html"
+                class="p-1.5 hover:underline-offset-8 hover:underline"
+                >Career</a
+              >
+              <a href="#" class="p-1.5 hover:underline-offset-8 hover:underline"
+                >Contact</a
+              >
             </div>
             <div class="flex">
               <a href="#" class="p-1.5 ml-6">
@@ -46,26 +68,33 @@
         </nav>
       </div>
     </header>
+
     <main class="mt-24">
-      <div class="bg-gray-100">
-        <div class="flex">
-          <div>
-            <div>
-              <h1>We Code</h1>
-              <h1>We Deliver</h1>
+      <section class="bg-gray-100">
+        <div class="container mx-auto">
+          <div class="flex w-full">
+            <div class="mt-40 w-2/5">
+              <div class=" flex flex-col font-bold text-6xl">
+                <h1 class="pb-4">We Code</h1>
+                <h1 class="pb-16">We Deliver</h1>
+              </div>
+              <div class="flex justify-start items-center">
+                <div><img src="pictures/play.svg" class="w-8" /></div>
+                <div class="ml-6">
+                  <p>Twiscode specializes in developing</p>
+                  <p>high-performing mobile and</p>
+                  <p>web applications.</p>
+                </div>
+              </div>
             </div>
-            <div>play button</div>
-            <div>
-              Twistcode specializes in developing hign-performing mobile and web
-              applications.
+
+            <div class=" flex justify-items-end mt-9  w-3/5">
+              <img src="pictures/portraitbg.png" class="absolute z-0" />
+              <img src="pictures/portrait.png" class="relative z-10" />
             </div>
-          </div>
-          <div>
-            <img src="pictures/portraitbg.png" />
-            <img src="pictures/portrait.png" />
           </div>
         </div>
-      </div>
+      </section>
       <div>
         <div class="flex">
           <div>
@@ -105,7 +134,7 @@
           </div>
         </div>
       </div>
-      <div class="flex">
+      <!-- <div class="flex">
         <div>
           <div>
             <h3>How We Work</h3>
@@ -148,10 +177,11 @@
       </div>
       <div>
         <div>Our Team</div>
-      </div>
+      </div> -->
     </main>
-    <footer class="flex justify-around border-black border-t-5px">
+
+    <!-- <footer class="flex justify-around border-black border-t-5px">
       Twiscode Pte.Ltd./ PT. Dapur Rumah Sejahtera
-    </footer>
+    </footer> -->
   </body>
 </html>

@@ -53,15 +53,19 @@
     </header>
     <main class="mt-24">
       <section class="bg-gray-100">
-        <div class="flex justify-center items-center text-6xl h-32 text-zinc-600">
+        <div
+          class="flex justify-center items-center text-6xl h-32 text-zinc-600"
+        >
           Front End Developer
         </div>
       </section>
       <section>
-        <div class="flex justify-center gap-24 mt-24">
-          <div class="flex flex-col">
+        <div class="container mx-auto mt-24 flex justify-center">
+          <div class="container w-6/12 flex flex-col">
             <div class="mb-8">
-              <div class="font-bold text-xl mb-8 text-zinc-600">Requirements:</div>
+              <div class="font-bold text-xl mb-8 text-zinc-600">
+                Requirements:
+              </div>
               <div>
                 <ul class="leading-8">
                   <li>
@@ -69,7 +73,7 @@
                       - Frontend Dev Candidate must possess at least Diploma,
                     </p>
                     <p>
-                       Bachelor's Degree in Engineering
+                      Bachelor's Degree in Engineering
                       (Computer/Telecommunication)
                     </p>
                     <p>or equivalent.</p>
@@ -92,7 +96,9 @@
               </div>
             </div>
             <div>
-              <div class="font-bold text-xl my-8 text-zinc-600">Frontend Expertise:</div>
+              <div class="font-bold text-xl my-8 text-zinc-600">
+                Frontend Expertise:
+              </div>
               <div>
                 <ul class="leading-8">
                   <li>- API implementation</li>
@@ -107,21 +113,39 @@
               </div>
             </div>
           </div>
-          <div class="border-2 rounded-2xl">
-            <div class="font-bold text-2xl text-zinc-600 flex justify-center my-8">Submit Your Application</div>
-            <div>
-              <div>Full Name</div>
-              <div>box</div>
+          <div class="container w-6/12 border-2 rounded-2xl">
+            <div
+              class="font-bold text-2xl text-zinc-600 flex justify-center my-8"
+            >
+              Submit Your Application
             </div>
-            <div>
-              <div>E-mail</div>
-              <div>box</div>
-            </div>
-            <div>
-              <div>Phone</div>
-              <div>box</div>
-            </div>
-            <div>Submit</div>
+            <form action="submitted.html">
+              <div class="m-10">
+                <div class="mb-2">Full Name</div>
+                <div>
+                  <input type="text" class="border rounded-md w-full" />
+                </div>
+              </div>
+              <div class="m-10">
+                <div class="mb-2">E-mail</div>
+                <div>
+                  <input type="text" class="border rounded-md w-full" />
+                </div>
+              </div>
+              <div class="m-10">
+                <div class="mb-2">Phone</div>
+                <div>
+                  <input type="number" class="border rounded-md w-full" />
+                </div>
+              </div>
+              <div class="m-10">
+                <input
+                  type="submit"
+                  value="Submit"
+                  class="border rounded-md w-full bg-neutral-600 text-white flex justify-center items-center h-10"
+                />
+              </div>
+            </form>
           </div>
         </div>
       </section>

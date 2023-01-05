@@ -16,82 +16,80 @@
         font-weight: 700;
       }
     </style>
-    <title>Home</title>
+    <title>HOME</title>
   </head>
   <body>
-    <header class="fixed w-full top-0 bg-white z-50">
-      <div class="container mx-auto">
-        <nav class="flex justify-between items-center py-4">
+    <header class="fixed w-full top-0 bg-white z-50 p-2">
+      <div class="flex">
+        <nav class="flex justify-between items-center w-full">
           <div>
-            <a href="home.html"> <img src="pictures/logo twiscode.png" /></a>
+            <img src="./pictures/logo twiscode.png" alt="LOGO" class="p-4" />
           </div>
-          <div class="p-1.5 ml-72 flex items-center">
-            <div class="flex gap-x-10 mr-6">
-              <a
-                href="home.html"
-                class="p-1.5 hover:underline-offset-8 hover:underline"
-                >Home</a
-              >
-              <a href="#" class="p-1.5 hover:underline-offset-8 hover:underline"
-                >Work</a
-              >
-              <a href="#" class="p-1.5 hover:underline-offset-8 hover:underline"
-                >Services</a
-              >
-              <a href="#" class="p-1.5 hover:underline-offset-8 hover:underline"
-                >Our Customer</a
-              >
-              <a href="#" class="p-1.5 hover:underline-offset-8 hover:underline"
-                >Team</a
-              >
-              <a
-                href="Career.html"
-                class="p-1.5 hover:underline-offset-8 hover:underline"
-                >Career</a
-              >
-              <a href="#" class="p-1.5 hover:underline-offset-8 hover:underline"
-                >Contact</a
-              >
-            </div>
-            <div class="flex">
-              <a href="#" class="p-1.5 ml-6">
-                <img class="w-8 h-4" src="pictures/search.png"
-              /></a>
-            </div>
+          <div class="flex w-7 h-auto lg:hidden lg:justify-between">
+            <img src="./pictures/menu-btn.png" alt="MENU" />
+          </div>
+          <div class="hidden lg:flex gap-x-14">
+            <a
+              href="home.html"
+              class="p-1.5 hover:underline-offset-8 hover:underline"
+              >Home</a
+            >
+            <a href="#" class="p-1.5 hover:underline-offset-8 hover:underline"
+              >Work</a
+            >
+            <a href="#" class="p-1.5 hover:underline-offset-8 hover:underline"
+              >Services</a
+            >
+            <a
+              href="#"
+              class="p-1.5 hover:underline-offset-8 hover:underline text-center"
+              >Our Customer</a
+            >
+            <a href="#" class="p-1.5 hover:underline-offset-8 hover:underline"
+              >Team</a
+            >
+            <a
+              href="Career.html"
+              class="p-1.5 hover:underline-offset-8 hover:underline"
+              >Career</a
+            >
+            <a href="#" class="p-1.5 hover:underline-offset-8 hover:underline"
+              >Contact</a
+            >
+            <a href="#" class="p-1.5 ml-6 mt-1">
+              <img class="w-8 h-4" src="pictures/search.png"
+            /></a>
           </div>
         </nav>
       </div>
     </header>
 
-    <main class="mt-24">
-      <section class="bg-gray-100 text-zinc-600">
-        <div class="container mx-auto">
-          <div class="flex w-full hero-section">
-            <div class="mt-40 w-2/5">
-              <div class="flex flex-col font-bold text-6xl">
-                <h1 class="pb-4">We Code</h1>
-                <h1 class="pb-16">We Deliver</h1>
-              </div>
-              <div class="flex justify-start items-center">
-                <div><img src="pictures/play.svg" class="w-8" /></div>
-                <div class="ml-6">
-                  <p>Twiscode specializes in developing</p>
-                  <p>high-performing mobile and</p>
-                  <p>web applications.</p>
-                </div>
+    <main>
+      <section class="bg-gray-100 text-zinc-600 mt-24">
+        <div class="flex flex-col lg:flex-row px-2 lg:container mx-auto">
+          <div class="mt-40 lg:flex flex-col lg:w-2/5">
+            <div class="font-bold text-6xl">
+              <h1 class="pb-4">We Code</h1>
+              <h1 class="pb-16">We Deliver</h1>
+            </div>
+            <div class="flex justify-start items-center">
+              <div><img src="pictures/play.svg" class="w-8" /></div>
+              <div class="ml-6">
+                <p>Twiscode specializes in developing</p>
+                <p>high-performing mobile and</p>
+                <p>web applications.</p>
               </div>
             </div>
-
-            <div class="flex justify-items-end mt-9 w-3/5">
-              <img src="pictures/portraitbg.png" class="absolute z-0" />
-              <img src="pictures/portrait.png" class="relative z-10" />
-            </div>
+          </div>
+          <div class="flex mt-9 lg:justify-items-end lg:w-3/5">
+            <img src="pictures/portraitbg.png" class="absolute z-0" />
+            <img src="pictures/portrait.png" class="relative z-10" />
           </div>
         </div>
       </section>
 
       <section>
-        <div class="flex justify-center mt-24 gap-24">
+        <div class="flex flex-col lg:flex-row justify-center mt-24 gap-24">
           <div class="relative">
             <img src="pictures/typing.png" class="rounded-md shadow-2xl" />
             <div
@@ -138,10 +136,15 @@
       </section>
 
       <section>
-        <div class="container mx-auto flex justify-end">
+        <div
+          class="lg:container lg:mx-auto flex flex-col lg:flex-row lg:justify-end"
+        >
           <div class="mt-24 relative">
+            <div>
+              <img src="pictures/mobile&laptop.png" />
+            </div>
             <div
-              class="bg-white w-96 h-52 absolute shadow-2xl -left-64 top-1/4 flex flex-col justify-center"
+              class="bg-white lg:w-96 lg:h-52 lg:absolute shadow-2xl -left-64 top-1/4 flex flex-col justify-center"
             >
               <div class="ml-6">
                 <div>
@@ -154,47 +157,41 @@
                   <p>you have in mind</p>
                 </div>
                 <div
-                  class="bg-neutral-600 w-44 h-10 flex justify-center items-center text-white"
+                  class="bg-neutral-600 lg:w-44 lg:h-10 flex justify-center items-center text-white"
                 >
                   Let's Have a Coffee
                 </div>
               </div>
-            </div>
-            <div>
-              <img src="pictures/mobile&laptop.png" />
             </div>
           </div>
         </div>
       </section>
 
       <section>
-        <div class="flex flex-col justify-center items-center mt-24">
+        <div class="mt-24">
           <div class="font-bold text-4xl text-center text-zinc-600">
             <p>Our Customers</p>
             <p>are our biggest fans</p>
           </div>
-          <div class="mt-20">
-            <div class="flex justify-around gap-x-10">
-              <img src="pictures/customer1.png" />
-              <img src="pictures/customer2.png" />
-              <img src="pictures/customer3.png" />
-              <img src="pictures/customer4.png" />
-              <img src="pictures/customer5.png" />
-            </div>
-            <div class="flex justify-around gap-x-10">
-              <img src="pictures/customer6.png" />
-              <img src="pictures/customer7.png" />
-              <img src="pictures/customer8.png" />
-              <img src="pictures/customer9.png" />
-            </div>
-            <div class="flex justify-around gap-x-10">
-              <img src="pictures/customer10.png" />
-              <img src="pictures/customer11.png" />
-              <img src="pictures/customer12.png" />
-              <img src="pictures/customer13.png" />
-            </div>
+
+          <div
+            class="mt-20 gap-14 grid grid-cols-1 justify-items-center lg:grid lg:grid-cols-4"
+          >
+            <img src="pictures/customer1.png" />
+            <img src="pictures/customer2.png" />
+            <img src="pictures/customer3.png" />
+            <img src="pictures/customer4.png" />
+            <img src="pictures/customer5.png" />
+            <img src="pictures/customer6.png" />
+            <img src="pictures/customer7.png" />
+            <img src="pictures/customer8.png" />
+            <img src="pictures/customer9.png" />
+            <img src="pictures/customer10.png" />
+            <img src="pictures/customer11.png" />
+            <img src="pictures/customer12.png" />
           </div>
-          <div class="mt-8 text-slate-400">see more</div>
+
+          <div class="mt-8 text-slate-400 flex justify-center">see more</div>
         </div>
       </section>
 
@@ -227,9 +224,9 @@
 
       <section>
         <div class="mt-24 container mx-auto">
-          <div class="flex justify-center gap-x-20">
+          <div class="flex flex-col lg:flex-row justify-center gap-x-20">
             <div class="font-bold text-4xl text-zinc-600">
-              <div class="mb-6">Join Our Team</div>
+              <div class="mb-6 text-center">Join Our Team</div>
               <img src="pictures/ourteam.png" />
             </div>
             <div class="text-zinc-600 mt-8">
@@ -240,7 +237,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
               </div>
               <div
-                class="bg-neutral-600 w-44 h-10 flex justify-center items-center text-white"
+                class="bg-neutral-600 w-24 lg:w-44 h-10 flex justify-center items-center text-white"
               >
                 Apply
               </div>
@@ -250,7 +247,7 @@
       </section>
 
       <section>
-        <div class="container mx-auto mt-24 flex justify-around">
+        <div class="container mx-auto mt-24 flex flex-col lg:flex-row justify-around">
           <div class="font-bold text-2xl text-zinc-600">
             <div class="mb-6">Location</div>
             <div class="relative">
@@ -301,14 +298,16 @@
           </div>
         </div>
       </section>
+
     </main>
 
     <footer class="my-12 border-t-4 text-zinc-600">
-      <div class="container mx-auto">
-        <div class="mt-4 flex justify-start items-center">
-          Twiscode Pte.Ltd./ PT. Dapur Rumah Sejahtera
+        <div class="container mx-auto">
+          <div class="mt-4 flex justify-start items-center">
+            Twiscode Pte.Ltd./ PT. Dapur Rumah Sejahtera
+          </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+
   </body>
 </html>
